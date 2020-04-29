@@ -1,0 +1,12 @@
+Git commands
+
+git status
+git init
+git add *
+git commit -m "file is connected"
+git pull     Note: It is used for updating local repository from Remote
+
+
+git config --global user.name "John Doe"
+git config --global user.email "johndoe@example.com"
+
