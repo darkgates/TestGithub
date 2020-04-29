@@ -1,13 +1,15 @@
 Git commands
 
 git status
-git init
+git init  
 git add *
 git commit -m "file is connected"
+git push origin master
 git pull    
 
-Note: git pull is used for updating local repository from Remote repository
-
+Note: git pull is used for updating local repository from Remote repository.
+Note: git init command creates a new Git repository. It can be used to convert an 
+existing, unversioned project to a Git repository or initialize a new empty repository.
 =======================++++++++==============================================
 
 git config --global user.name "John Doe"
@@ -18,15 +20,30 @@ git config --global user.email "johndoe@example.com"
 …or create a new repository on the command line
 echo "# TestGithub" >> README.md
 
-git init
+git init   
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/darkgates/TestGithub.git
 git push -u origin master
+                     
+Note: An username and Password prompt will appear. Once u put the login
+      credentials, u are now connected with github repository.Then type
+      git push origin master (it will push ur work/changes to remote repository)
+      git status  (to see everything is updated or not)
+ 
 
-==========================+++++++++++++++++++++++++++++++++++++++++++++++++++
+==========================++++++++++++++++=====================================
               
 …or push an existing repository from the command line
 
 git remote add origin https://github.com/darkgates/TestGithub.git
-git push -u origin master
+git push -u origin master 
+
+========================+++++++++++============================================
+
+git clone is basically a combination of :-
+
+git init (create the local repository)
+git remote add (add the URL to that repository)
+git fetch (fetch all branches from that URL to your local repository)
+git checkout (create all the files of the main branch in your working tree
