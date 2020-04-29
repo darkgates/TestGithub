@@ -9,13 +9,30 @@ git pull
 
 Note: git pull is used for updating local repository from Remote repository.
 Note: git init command creates a new Git repository. It can be used to convert an 
-existing, unversioned project to a Git repository or initialize a new empty repository.
-=======================++++++++==============================================
+      existing, unversioned project to a Git repository or initialize a new empty 
+      repository.
+
+Note: git commit command is used to save your changes to the localrepository. Note
+      that you have to explicitly tell Git which changes you want to include in a  
+      commitbefore running the "git commit" command. This means that a file won't 
+      be automatically included in the next commit just because it was changed.
+
+Note: git push origin master will push your changes to the remote server. "master" 
+      refers to master branch in your repository. If you want to push your changes to 
+      any other branch (say test-branch), you can do it by: git push origin test-branch. 
+      This will push your code to origin of test-branch in your repository
+
+============================+++++++++++++===============================================
+
+First time when ur connecting ur local machine to remote repository. U have to configure
 
 git config --global user.name "John Doe"
 git config --global user.email "johndoe@example.com"
 
-=====================+++++++++===============================================
+git config user.name "John Denver"
+git config user.email "John@example.com"
+
+=============================++++++++++++===============================================
 
 …or create a new repository on the command line
 echo "# TestGithub" >> README.md
@@ -32,14 +49,14 @@ Note: An username and Password prompt will appear. Once u put the login
       git status  (to see everything is updated or not)
  
 
-==========================++++++++++++++++=====================================
+===================================++++++++++++++++=====================================
               
-…or push an existing repository from the command line
+Push an existing repository from the command line
 
 git remote add origin https://github.com/darkgates/TestGithub.git
 git push -u origin master 
 
-========================+++++++++++============================================
+================================++++++++++++============================================
 
 git clone is basically a combination of :-
 
